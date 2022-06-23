@@ -5,7 +5,7 @@
     "description": "Armory API",
     "version": "1.0.0"
   },
-  "host": "https://personal-341-project.herokuapp.com/",
+  "host": "https://personal-341-project.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "https"
