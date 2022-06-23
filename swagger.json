@@ -1,0 +1,166 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Riley Hansen Personal Armory API",
+    "description": "Armory API",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/firearms": {
+      "get": {
+        "description": "Request all firearms from database: will return JSON",
+        "summary": "Read all firearms",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "Create a new object in firearms database",
+        "summary": "Create new firearm",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "brand": {
+                  "example": "Sig Sauer"
+                },
+                "model": {
+                  "example": "Cross"
+                },
+                "caliber": {
+                  "example": ".223 Wylde"
+                },
+                "msrp": {
+                  "example": 1400
+                },
+                "color": {
+                  "example": "Black"
+                },
+                "type": {
+                  "example": "Rifle"
+                },
+                "use": {
+                  "example": "hunting"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/firearms/{id}": {
+      "get": {
+        "description": "Use this ID for finding the 'CZ Shadow 2 9 MM handgun': 62b3e17a5163ce631ebd6d93",
+        "summary": "Read a specific firearm using a unique ID value",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "Use this ID to edit the Springfield Armory Saint Rifle: 62b3e17a5163ce631ebd6d90",
+        "summary": "Update a firearm using the unique firearm ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "brand": {
+                  "example": "Springfield Armory"
+                },
+                "model": {
+                  "example": "Saint AR-15"
+                },
+                "caliber": {
+                  "example": "5.56 NATO"
+                },
+                "msrp": {
+                  "example": 1000
+                },
+                "color": {
+                  "example": "Flat Dark Earth"
+                },
+                "type": {
+                  "example": "Rifle"
+                },
+                "use": {
+                  "example": "target"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete the Beretta 92 FX 9MM Handgun using this ID: 62b3e17a5163ce631ebd6d91",
+        "summary": "Delete a firearm using a unique ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}

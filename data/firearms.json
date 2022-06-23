@@ -1,0 +1,74 @@
+{
+    "firearm0" : {
+        "brand": "Mossberg",
+        "model": "Maverick 88",
+        "caliber": "12 GA",
+        "msrp": 250,
+        "color": "Black",
+        "type": "Shotgun",
+        "use": "self defense"
+    },
+    "firearm1" : {
+        "brand": "Mossberg",
+        "model": "500",
+        "caliber": "12 GA",
+        "msrp": 600,
+        "color": "Brown",
+        "type": "Shotgun",
+        "use": "target"
+    },
+    "firearm2" : {
+        "brand": "Browning",
+        "model": "BLR-22",
+        "caliber": ".22 LR",
+        "msrp": 600,
+        "color": "Brown",
+        "type": "Rifle",
+        "use": "hunting"
+    },
+    "firearm3" : {
+        "brand": "Browning",
+        "model": "Black Label 1911-380",
+        "caliber": ".380 ACP",
+        "msrp": 750,
+        "color": "Brown",
+        "type": "Handgun",
+        "use": "self defense"
+    },
+    "firearm4" : {
+        "brand": "Springfield Armory",
+        "model": "Saint",
+        "caliber": "5.56 NATO",
+        "msrp": 1700,
+        "color": "Black",
+        "type": "Rifle",
+        "use": "target"
+    },
+    "firearm5" : {
+        "brand": "Beretta",
+        "model": "92 FX",
+        "caliber": "9 MM",
+        "msrp": 700,
+        "color": "Black",
+        "type": "Handgun",
+        "use": "self defense"
+    },
+    "firearm6" : {
+        "brand": "Springfield Armory",
+        "model": "1911 Garrison",
+        "caliber": "9 MM",
+        "msrp": 700,
+        "color": "Stainless Steel",
+        "type": "Handgun",
+        "use": "target"
+    },
+    "firearm7" : {
+        "brand": "CZ",
+        "model": "Shadow 2",
+        "caliber": "9 MM",
+        "msrp": 1300,
+        "color": "Blue",
+        "type": "Handgun",
+        "use": "target"
+    }
+}

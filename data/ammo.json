@@ -1,0 +1,37 @@
+{
+    "ammo0": {
+        "caliber": ".22 LR",
+        "brand": "CCI",
+        "grain": "37",
+        "type": "target",
+        "inventory": 1250 
+    },
+    "ammo1": {
+        "caliber": ".380 ACP",
+        "brand": "Hornady",
+        "grain": "90",
+        "type": "self defense",
+        "inventory": 50 
+    },
+    "ammo2": {
+        "caliber": "9mm Luger",
+        "brand": "Federal",
+        "grain": "130",
+        "type": "self defense",
+        "inventory": 300 
+    },
+    "ammo3": {
+        "caliber": "12 GA",
+        "brand": "Federal",
+        "grain": "6 Shot",
+        "type": "self defense",
+        "inventory": 200 
+    },
+    "ammo4": {
+        "caliber": "5.56 NATO",
+        "brand": "Federal",
+        "grain": 55,
+        "type": "target",
+        "inventory": 250 
+    }
+}
