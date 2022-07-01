@@ -7,7 +7,7 @@ const app = express();
 
 require('dotenv').config();
 
-const { auth } = require('express-openid-connect');
+const { auth, requiresAuth } = require('express-openid-connect');
 app.use(
   auth({
     authRequired: false,
@@ -19,7 +19,7 @@ app.use(
   })
 )
 
-app.get('/', (req, res) => {
+app.get('/', requiresAuth(), (req, res) => {
   console.log(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 })
 
